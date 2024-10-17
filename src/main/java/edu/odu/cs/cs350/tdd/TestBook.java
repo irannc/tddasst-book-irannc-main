@@ -35,6 +35,10 @@ public class TestBook {
         assertEquals("Introduction", book.contents.get(0).getTitle());
         assertEquals("Chapter 1", book.contents.get(1).getTitle());
     }
+
+    private void assertEquals(int i, int totalPages) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
   }
  
 }

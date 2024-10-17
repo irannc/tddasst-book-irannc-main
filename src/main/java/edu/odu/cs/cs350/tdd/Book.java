@@ -1,7 +1,6 @@
 package edu.odu.cs.cs350.tdd;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * A book containing a collection of chapters, organized by (starting) page number.
@@ -29,9 +28,13 @@ public class Book /*implements Iterable<Chapter>*/ {
     contents = new ArrayList<>();
     totalPages = 0;
   }
-
   
+  public void 
+
+  public void addChapter(Chapter chapter) {
+    contents.add(chapter);
+    totalPages += chapter.getNumberOfPages();
+    
+}
   
-
-
 }
