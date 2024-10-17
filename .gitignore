@@ -1,0 +1,6 @@
+.project
+.classpath
+.vscode/
+**/*.class
+**/*.jar
+/bin/
