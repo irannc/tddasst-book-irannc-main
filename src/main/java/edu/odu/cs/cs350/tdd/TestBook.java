@@ -9,8 +9,6 @@ import static org.hamcrest.Matchers.*;
 
 
 public class TestBook {
-
-  
   
   /**
    * Test method for {@link edu.odu.cs.cs350.Book#Magazine()}.
@@ -28,17 +26,11 @@ public class TestBook {
         book.addChapter(chapter2);
 
         // Assert that the chapters were added correctly
-        assertEquals(2, book.contents.size()); // Check if both chapters were added
-        assertEquals(30, book.totalPages);     // Check if total pages is updated correctly
+        assertEquals(2, book.getSize()); // Check if both chapters were added
+        assertEquals(30, book.getTotalPages());     // Check if total pages is updated correctly
 
         // Check the titles of the chapters to verify they are in the correct order
         assertEquals("Introduction", book.contents.get(0).getTitle());
         assertEquals("Chapter 1", book.contents.get(1).getTitle());
     }
-
-    private void assertEquals(int i, int totalPages) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
   }
- 
-}

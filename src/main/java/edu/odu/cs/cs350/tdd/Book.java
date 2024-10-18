@@ -29,7 +29,18 @@ public class Book /*implements Iterable<Chapter>*/ {
     totalPages = 0;
   }
   
-  public void 
+  public int getTotalPages(){
+    return totalPages;
+  }
+
+public int getSize(){
+  return contents.size();
+}
+
+public ArrayList<Chapter> getChapters() {
+  return this.contents;
+}
+
 
   public void addChapter(Chapter chapter) {
     contents.add(chapter);
